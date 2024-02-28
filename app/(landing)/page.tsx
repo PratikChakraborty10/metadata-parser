@@ -1,8 +1,12 @@
+import Mainabar from '@/components/mainbar'
+import { Button } from '@/components/ui/button'
 import React from 'react'
 
 function LandingPage() {
   return (
-    <div>Header Space</div>
+    <div>
+      
+    </div>
   )
 }
 
