@@ -23,46 +23,46 @@ const montserrat = Montserrat({
 
 const routes = [
   {
-    label: "Dashboard",
+    label: "Preview",
     icon: LayoutDashboard,
-    href: "/dashboard",
+    href: "/preview",
     color: "text-sky-500",
   },
   {
-    label: "Code Generation",
+    label: "Meta Tags",
     icon: Code,
     color: "text-green-700",
-    href: "/code",
+    href: "/meta-tags",
   },
   {
-    label: "Conversation",
+    label: "Meta View",
     icon: MessageSquare,
-    href: "/conversation",
+    href: "/meta-view",
     color: "text-violet-500",
   },
-  {
-    label: "Image Generation",
-    icon: ImageIcon,
-    color: "text-pink-700",
-    href: "/image",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    color: "text-emerald-500",
-    href: "/music",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    color: "text-orange-700",
-    href: "/video",
-  },
-  {
-    label: "Settings",
-    icon: Settings,
-    href: "/settings",
-  },
+  // {
+  //   label: "Image Generation",
+  //   icon: ImageIcon,
+  //   color: "text-pink-700",
+  //   href: "/image",
+  // },
+  // {
+  //   label: "Music Generation",
+  //   icon: Music,
+  //   color: "text-emerald-500",
+  //   href: "/music",
+  // },
+  // {
+  //   label: "Video Generation",
+  //   icon: VideoIcon,
+  //   color: "text-orange-700",
+  //   href: "/video",
+  // },
+  // {
+  //   label: "Settings",
+  //   icon: Settings,
+  //   href: "/settings",
+  // },
 ];
 
 interface SidebarProps {
