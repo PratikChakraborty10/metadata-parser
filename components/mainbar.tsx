@@ -1,5 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { Montserrat } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const montserrat = Montserrat({
+  weight: "600",
+  subsets: ["latin"],
+});
 
 function Mainabar() {
   return (
@@ -7,7 +14,7 @@ function Mainabar() {
       <div className="flex justify-between">
         <div className="flex gap-4 justify-center items-center">
           <Image alt="logo" src="/logo.png" height={30} width={30} />
-          <h1 className="font-bold">Link Glimpse</h1>
+          <h1 className={cn("font-bold", montserrat.className)}>Link Glimpse</h1>
         </div>
       </div>
     </div>
