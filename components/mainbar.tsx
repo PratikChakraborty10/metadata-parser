@@ -7,7 +7,7 @@ function Mainabar() {
       <div className="flex justify-between">
         <div className="flex gap-4 justify-center items-center">
           <Image alt="logo" src="/logo.png" height={30} width={30} />
-          <h1 className="font-bold">Meta Parser</h1>
+          <h1 className="font-bold">Link Glimpse</h1>
         </div>
       </div>
     </div>
