@@ -10,6 +10,7 @@ import {
   Code,
   ImageIcon,
   LayoutDashboard,
+  Columns3,
   MessageSquare,
   Music,
   Settings,
@@ -23,8 +24,14 @@ const montserrat = Montserrat({
 
 const routes = [
   {
-    label: "Preview",
+    label: "Dashboard",
     icon: LayoutDashboard,
+    href: "/dashboard",
+    color: "text-sky-500",
+  },
+  {
+    label: "Social View",
+    icon: Columns3,
     href: "/preview",
     color: "text-sky-500",
   },
