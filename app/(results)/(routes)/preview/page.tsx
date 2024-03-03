@@ -12,6 +12,9 @@ import { metadata } from "@/app/layout";
 import MetaTags from "../meta-tags/page";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import GooglePreview from "@/components/google-preview";
+import FacebookPreview from "@/components/facebook-preview";
+import TwitterPreview from "@/components/twitter-preview";
 
 const Preview = () => {
   const searchParams = useSearchParams();
@@ -25,7 +28,7 @@ const Preview = () => {
       .then((res: any) => {
         setHeadTags(res.metaTags);
         setLinkTags(res.linkTags);
-        console.log(res.metaTags)
+        console.log(res.metaTags);
       })
       .catch((error) => {
         console.error("Error in fetchMetaAndLinkTags:", error);
@@ -63,21 +66,19 @@ const Preview = () => {
                   <Upload />
                 </AvatarFallback>
               </Avatar>
-              <p className="text-sm text-black">
-                Click to upload image
-              </p>
+              <p className="text-sm text-black">Click to upload image</p>
             </div>
           </div>
-          <Input type="text"
-          placeholder="Enter title" />
+          <Input type="text" placeholder="Enter title" />
           <Textarea placeholder="Enter description ..." />
         </div>
 
-        <div className="w-2/3 h-full flex flex-col justify-center items-center p-6 bg-white">
+        <div className="w-2/3 h-[23rem] flex flex-col justify-start p-6 bg-white overflow-y-auto">
           {/* Vertical list of images */}
-          <div className="flex gap-2">
-          <p className="text-sm text-muted-foreground">{JSON.stringify(headTags)}</p>
-
+          <div className="flex flex-col gap-4 overflow-y-auto">
+            <GooglePreview />
+            <FacebookPreview />
+            <TwitterPreview />
           </div>
         </div>
       </div>
